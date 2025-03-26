@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import './mixin.scss';
+@import './chatbox';
+@import './background';
+@import './vars';
+/* 기본 셋업 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0.25;
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+header,
+section,
+article,
+aside,
+footer,
+main,
+a,
+button,
+input,
+textarea,
+img,
+nav,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  /* 폰트 크기 상속 */
+  font-size: inherit;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  display: block;
+}

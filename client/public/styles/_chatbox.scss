@@ -1,0 +1,133 @@
+.open-ai-container {
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.response_container {
+  border: solid 1px #fff;
+  height: calc(100% - 115px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 516px;
+  width: 90%;
+  margin: 16px 0 0;
+  padding: 4px 0px 4px 0px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  // backdrop-filter: blur(10px);
+
+  overflow-y: auto;
+
+  scroll-behavior: smooth;
+  p {
+    padding: 4px;
+    color: #fff;
+  }
+}
+//
+/* 코드 블럭 (다크 모드) */
+.code-block {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Fira Code', monospace;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.code-block {
+  background-color: #525252;
+  color: #d4d4d4;
+  font-family: 'Fira Code', monospace;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.subscribe_news_container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+  max-width: 516px;
+  width: 90%;
+  height: 85px;
+  text-align: center;
+  align-items: center;
+
+  .subscribe_news_text {
+    @include font-style(var(--font-montserrat), 700, 16px);
+
+    letter-spacing: -0.24px;
+    text-align: center;
+    color: #fff;
+  }
+  .subscribe_news_label {
+    display: flex;
+
+    width: 100%;
+    max-width: 516px;
+    height: 50px;
+    flex-grow: 0;
+    margin: 16px 0 0;
+    padding: 4px 4px 4px 4px;
+    border-radius: 7px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: solid 2px #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      appearance: none;
+      .subscribe_news_submit_buttonimg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  input {
+    @include font-style(var(--font-exo2), 400, 16px);
+
+    width: 446px;
+    color: #fff;
+    &::placeholder {
+      color: #e4e4e4;
+      opacity: 1;
+    }
+  }
+
+  .subscribe_news_error_message {
+    @include font-style(var(--font-exo2), 400, 16px);
+    text-align: left;
+    color: #ff6633;
+  }
+}
+.markdown-body pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.markdown-body code {
+  background-color: #2a2a2a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
