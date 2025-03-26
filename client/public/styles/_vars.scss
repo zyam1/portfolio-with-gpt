@@ -1,0 +1,32 @@
+// 메인 폰트, 컬러
+$main-white: #eee;
+$main-color: rgba(255, 255, 255, 0.15);
+$main-black: #333;
+
+:root {
+  // 메인 폰트, 컬러
+  --mainfont-SUIT: 'SUIT-Regular';
+  --main-white: #eee;
+  --main-color: rgba(255, 255, 255, 0.851);
+  --main-bgcolor: rgba(255, 255, 255, 0.15);
+  --main-button: rgba(255, 255, 255, 0.3);
+  --main-black: #333;
+
+  //폰트 셋팅
+  font-family: var(--mainfont-SUI);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  // 배경 색상 요소
+  --color-bg1: rgb(194, 164, 30);
+  --color-bg2: rgb(207, 80, 207);
+  --color1: 119, 223, 141;
+  --color2: 221, 74, 255;
+  --color3: 148, 222, 235;
+  --color4: 207, 80, 207;
+  --color5: 194, 164, 30;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+}

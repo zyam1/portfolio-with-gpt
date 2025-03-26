@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*폰트 */
+:root {
+  --font-exo2: 'Exo 2', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+@mixin font-style($font-family, $weight, $size, $italic: normal) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  font-style: $italic;
+}
